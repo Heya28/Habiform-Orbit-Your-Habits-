@@ -64,35 +64,6 @@ label input {
     margin-right: 0;
 }
 
-#section3 {
-    margin: 0;
-    color: aliceblue;
-    height: 10vw;
-    width: 10vw;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    z-index: 3;
-    font-size: 4vw;
-    position: absolute;
-    bottom: 53vh;
-    left: 38.6vw;
-}
-
-#section5 {
-    margin: 0;
-    color: aliceblue;
-    height: 10vw;
-    width: 10vw;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    z-index: 3;
-    font-size: 4vw;
-    position: absolute;
-    bottom: 53vh;
-    left: 64.2vw;
-}
 
 #section6 h1 {
     margin-bottom: 3vh;
@@ -119,81 +90,6 @@ input[type="checkbox"] {
     margin-top: 1vh;
 }
 
-#section7 {
-    margin: 0;
-    color: aliceblue;
-    height: 10vw;
-    width: 10vw;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    z-index: 3;
-    font-size: 4vw;
-    position: absolute;
-    bottom: 53vh;
-    left: 96.2vw;
-
-}
-
-#section9 {
-    margin: 0;
-    color: aliceblue;
-    height: 10vw;
-    width: 10vw;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    z-index: 3;
-    font-size: 4vw;
-    position: absolute;
-    bottom: 53vh;
-    left: 122.67vw;
-}
-
-#section11 {
-    margin: 0;
-    color: aliceblue;
-    height: 10vw;
-    width: 10vw;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    z-index: 3;
-    font-size: 4vw;
-    position: absolute;
-    bottom: 53vh;
-    left: 148.67vw;
-}
-
-#section13 {
-    margin: 0;
-    color: aliceblue;
-    height: 10vw;
-    width: 10vw;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    z-index: 3;
-    font-size: 4vw;
-    position: absolute;
-    bottom: 53vh;
-    left: 177.99vw;
-}
-
-#section15 {
-    margin: 0;
-    color: aliceblue;
-    height: 10vw;
-    width: 10vw;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    z-index: 3;
-    font-size: 4vw;
-    position: absolute;
-    bottom: 53vh;
-    left: 206vw;
-}
 
 select {
     font-family: "Sour Gummy", sans-serif;
