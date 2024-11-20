@@ -10,6 +10,25 @@ body {
     overflow-x: scroll;
     overflow-y: hidden;
 }
+#next-section {
+    display: none; /* Initially hidden */
+}
+
+.fadeOut {
+    animation: fadeOut 1s forwards;
+}
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.hidden {
+    display: none;
+}
 
 #spaceship {
     position: fixed;
