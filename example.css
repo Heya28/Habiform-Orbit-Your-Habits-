@@ -1,0 +1,66 @@
+.biome-checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.biome {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.biome:hover {
+    transform: scale(1.05);
+}
+
+input[type="checkbox"] {
+    display: none; /* Hide the checkbox */
+}
+
+.biome-label {
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    z-index: 1;
+}
+
+#forest {
+    background-image: url('forest.jpg');
+    background-size: cover;
+}
+
+#desert {
+    background-image: url('desert.jpg');
+    background-size: cover;
+}
+
+#ocean {
+    background-image: url('ocean.jpg');
+    background-size: cover;
+}
+
+#tundra {
+    background-image: url('tundra.jpg');
+    background-size: cover;
+}
+
+/* Optional: Add checkmark indicator on selected biomes */
+input[type="checkbox"]:checked + .biome-label {
+    color: yellow; /* Change color when selected */
+    font-style: italic;
+}
+
+/* Add hover effects */
+.biome:hover input[type="checkbox"]:checked + .biome-label {
+    color: orange;
+}

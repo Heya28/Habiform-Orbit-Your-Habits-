@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="multimedia/galaxies.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="spaceship-container">
+        <img src="multimedia/spaceshipfinal.png"
+            alt="Spaceship" class="spaceship" id="spaceship">
+    </div>
+    <section id="section1">
+        <h1>Prepare for Liftoff!</h1>
+        <h2>Transform the Universe, One Habit at a Time.</h2>
+        <h2>Fill in your details to craft a unique space adventure.</h2>
+    </section>
+    <div class="textbox">
+        <section id="section2">
+            <h1>Mission Briefeing!</h1>
+            <h2>Once you submit your mission details, embark on an immersive journey through the galaxy.
+            </h2>
+        </section>
+    </div>
+
+    <section id="section3">
+        <h1>&rarr;</h1>
+    </section>
+
+    <div class="textbox">
+        <section id="section4">
+            <h1>Planet Core</h1>
+            <label id="planetName">Name your planet:
+                <input type="text" id="planetName" placeholder="Enter a name for your planet.">
+            </label>
+            <label id="planetMean">What does this planet mean to you?
+                <input type="text" id="planetMean" placeholder="eg focus, self-growth">
+            </label>
+        </section>
+    </div>
+    <section id="section5">
+        <h1>&rarr;</h1>
+    </section>
+
+    <div class="textbox">
+        <section id="section6">
+            <h1>Terraforming Focus</h1>
+            <label>What areas will your habits nurture on this planet?</label>
+            <br>
+            <br>
+            <label for="checkfocus1">Lush Forests (Health & Fitness) </label>
+            <input type="checkbox" id="checkfocus1" name="checkname">
+            <br>
+            <label for="checkfocus2"> Vast Oceans (Mental Wellness) </label>
+            <input type="checkbox" id="checkfocus2" name="checkname">
+            <br>
+            <label for="checkfocus3"> Glowing Cities (Productivity & Career) </label>
+            <input type="checkbox" id="checkfocus3" name="checkname">
+            <br>
+            <label for="checkfocus4"> Dynamic Volcanoes (Personal Challenges) </label>
+            <input type="checkbox" id="checkfocus4" name="checkname">
+        </section>
+    </div>
+    <section id="section7">
+        <h1>&rarr;</h1>
+    </section>
+
+    <div class="textbox">
+        <section id="section8">
+            <h1>Habit Blueprint </h1>
+            <label for="habitnum"><input type="number" min="1" max="10">How many habits will help your planet thrive?
+            </label>
+        </section>
+    </div>
+    <section id="section9">
+        <h1>&rarr;</h1>
+    </section>
+    <div class="textbox">
+        <section id="section10">
+            <h1>Starship Schedule</h1>
+            <label for="sched">Allocate resources (time) to each habit daily. [0-6 hours]</label>
+            <input type="range" id="sched" min="0" max="6">
+        </section>
+    </div>
+    <section id="section11">
+        <h1>&rarr;</h1>
+    </section>
+    <div class="textbox">
+        <section id="section12">
+            <h1>Cosmic Obstacles</h1>
+            <label for="barrier">What cosmic forces might hinder your progress?</label>
+            <select name="barriers" id="barrier">
+                <option value="Black Hole of Procrastination">Black Hole of Procrastination</option>
+                <option value="Asteroid of Overcommitment">Asteroid of Overcommitment</option>
+                <option value="Nebula of Distraction">Nebula of Distraction</option>
+                <option value="Supernova of Stress">Supernova of Stress</option>
+            </select>
+        </section>
+    </div>
+    <section id="section13">
+        <h1>&rarr;</h1>
+    </section>
+    <div class="textbox">
+        <section id="section14">
+            <h1>Motivation Catalyst</h1>
+            <label for="power">What will power your progress?</label>
+            <br>
+            <label for="daily">1. Cosmic Gems (Daily achievements)</label>
+            <input type="radio" name="power" id="daily">
+            <br>
+            <label for="badge">2. Starry Badges (Milestone rewards)</label>
+            <input type="radio" name="power" id="badge">
+            <br>
+            <label for="art">3. Planetary Artifacts (Unlockable features)</label>
+            <input type="radio" name="power" id="art">
+        </section>
+    </div>
+    <section id="section15">
+        <h1>&rarr;</h1>
+    </section>
+    <div class="textbox">
+        <section id="section16">
+            <h1>Cosmic Signature</h1>
+            <label for="sign">Sign your cosmic pledge to transform this planet.</label>
+            <br>
+            <br>
+            <label for="sign2">I, commit to nurturing my planet and building habits that light up the stars.</label>
+            <button class="button-space">Launch Terraforming Process</button>
+        </section>
+    </div>
+    <script src="app2.js"></script>
+
+</body>
+
+</html>
