@@ -14,8 +14,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
-    overflow: hidden;
+
 }
 .textbox {
     padding: 0.1em 1em;
@@ -30,7 +29,7 @@ html, body {
     z-index: 0;
     box-shadow: 0 0 3em rgba(255, 255, 255, 0.5);
     animation: moving-light 3s infinite linear;
-    height: 60vh !important;
+    height: 110vh !important;
     margin-right: 10%;
     margin-left:10%;
     margin-top: 17vh;
