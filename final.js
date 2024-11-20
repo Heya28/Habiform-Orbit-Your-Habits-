@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
     // Retrieve and use values from localStorage
     let planetName = localStorage.getItem("planetName");
     let planetMean = localStorage.getItem("planetMean");
@@ -9,6 +9,29 @@ window.onload = function() {
     let rangeVal = localStorage.getItem("rangeVal");
     let selectedFocus = localStorage.getItem("selectedFocus");
     let selectedPower = localStorage.getItem("selectedPower");
-    document.querySelector("#finish").innerHTML="";
-    
+    let story = `
+<h2>Welcome to the Stellar Habit Terraformer Mission!</h2>
+<p>Your mission to terraform and nurture the planet <strong>${planetName}</strong> has begun. This planet is special, for it represents <strong>${planetMean}</strong>—a place where growth, habits, and progress take center stage.</p>
+<p>As the Stellar Habit Terraformer, you’ve chosen to nurture this planet by focusing on the following areas:</p>
+<ul>
+    ${checkedFocusAreas.map(area => `<li>${checkedFocusAreas}</li>`).join('')}
+</ul>
+<p>To fuel your planet’s transformation, you have crafted the following Habit Blueprint:</p>
+<ul>
+    <li><strong>Habit 1:</strong> ${habit1}</li>
+    <li><strong>Habit 2:</strong> ${habit2}</li>
+    <li><strong>Habit 3:</strong> ${habit3}</li>
+</ul>
+<p>Each day, you will dedicate <strong>${rangeVal} hours</strong> to your habits, nurturing the planet and helping it grow stronger.</p>
+<p>However, your journey will not be without its challenges. The forces of the universe are constantly at play, and you may face the following cosmic obstacles:</p>
+<ul>
+    <li><strong>Cosmic Obstacle:</strong> ${selectedFocus}</li>
+</ul>
+<p>But fear not! With your chosen <strong>${selectedPower === 'daily' ? 'Cosmic Gems (Daily Achievements)' : (motivationPower === 'badge' ? 'Starry Badges (Milestone Rewards)' : 'Planetary Artifacts (Unlockable Features)')}</strong>, you will power your progress and overcome any hurdle.</p>
+<h3>Get ready, your mission begins now!</h3>
+`;
+
+    document.querySelector("#finish").innerHTML = story;
+
 };
+
